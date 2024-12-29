@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi C++</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <nav>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#exercise">Latihan</a></li>
+          <li><a href="#resources">Sumber</a></li>
+        </ul>
+</nav>
+  </header>
+
+  <section id="home" class="section">
+    <h1>Materi C++: Pak Gusti Nyoman Budiadnyana S. Kom., MM.</h1>
+    <p>Selamat datang di  situs dokumentasi pembelajaran C++ Azzahra selama 1 semester (Semester 1) yang diajarkan oleh Pak Nyoman!</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Tentang</h2>
+    <p>Pak Nyoman adalah Kaprodi jurusan Software Engineering sekaligus dosen Favorit zara yang mengampu mata kuliah C++ Semester 1 di UNIPI. 
+      Dengan pengajaran mendalam, beliau memberikan modul latihan dan bimbingan untuk menguasai pemrograman C++.
+      berikut adalah beberapa latihan yang diberikan oleh Pak Nyoman yang saya coba untuk saya pelajari dan saya dokumentasikan di web ini (akan selalu saya upgrade bila ada latihan baru).</p>
+    </p>
+  </section>
+
+  <section id="exercise" class="section">
+    <h2>Latihan</h2>
+    <div class="container">
+    <div class="exercise-box">
+      <h3>Latihan 1</h3>
+      <img src="output1.png" alt="Output Latihan 1">
+      <textarea readonly>// Program Tampil Pesan
+#include <iostream>
+
+using namespace std;
+          
+int main()
+{
+    cout<<"Selamat datang di Program C++"<<endl;
+    cout<<"-------------------------------"<<endl;
+    cout<<"Nama Mahasiswi : Azzahra"<<endl;
+    cout<<"Semester       : 1"<<endl; 
+    cout<<"Jurusan        : Software Engineering"<<endl;
+    cout<<"Mata Kuliah    : Praktek Dasar C++"<<endl;
+          
+  return 0;
+}</textarea>
+    </div>
+    
+  <div class="exercise-box">
+    <h3>Latihan 2</h3>
+    <img src="output2.png" alt="Output Latihan 2">
+    <textarea readonly>// Program Jumlah
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int x = 1800, y = 500;
+    cout << "Hasil penjumlahan: " << (x + y) << endl;
+  
+  return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 3</h3>
+  <img src="output3.png" alt="Output Latihan 3">
+  <textarea readonly>// Program Jumlah Barang
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,d,e;
+
+    a=10000;
+    b=10;
+    c=3;
+    d=b-c;
+    e=a*c;
+
+    cout<<"DATA BARANG			"<<endl;
+    cout<<"---------------------------------"<<endl;
+    cout<<"Harga  Barang adalah :"<<a<<endl;
+    cout<<"Jumlah Barang adalah :"<<b<<endl;
+    cout<<"Barang Barang adalah :"<<c<<endl;
+    cout<<"---------------------------------"<<endl;
+
+    cout<<"Sisa Barang adalah :"<<d<<endl;
+    cout<<"Jumlah Bayar adalah :"<<e<<endl;
+    cout<<"									"<<endl;
+      
+  return 0;
+      
+}</textarea>
+</div> 
+
+<div class="exercise-box">
+  <h3>Latihan 4</h3>
+  <img src="output4.png" alt="Output Latihan 4">
+  <textarea readonly>// Program Operator Majemuk 
+#include <iostream>
+
+using namespace std;
+      
+int main()
+{
+    int x;
+    x=12;
+
+    cout<<"Nilai awal x    = "<<x<<endl;
+    x+=8;
+
+    cout<<"Nilai x menjadi = "<<x<<endl;
+    x/=2;
+
+    cout<<"Nilai x menjadi = "<<x<<endl;
+
+    cout<<" "<<endl;
+      
+  return 0;
+      
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 5</h3>
+  <img src="output5.png" alt="Output Latihan 5">
+  <textarea readonly>// Program Input Data 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c,d,e;
+
+    cout<<"Masukan Nilai A : ";cin>>a;
+    cout<<"Masukan Nilai B : ";cin>>b;
+    cout<<"==================="<<endl;
+
+    c=a+b;
+    cout<<"Nilai C adalah : "<<c<<endl;
+    
+    d=c/a;
+    cout<<"Nilai D adalah : "<<d<<endl;
+    
+    e=d*c;
+    cout<<"Nilai E adalah : "<<e<<endl;
+    
+    cout<<"	"<<endl;
+  
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 6</h3>
+  <img src="output6.png" alt="Output Latihan 6">
+  <textarea readonly>// Program Hasil Bagi
+#include <iostream>
+
+using namespace std;
+      
+int main()
+{
+    int a,b,c,d,e;
+    
+    a=5;
+    b=10;
+    c=15;
+    d=a+b*c-b;
+    e=c%b;
+    
+    cout<<"Hasil D adalah :"<<d<<endl;
+    cout<<"sisa bagi c%b  : "<<e<<endl;
+    
+    cout<<"	"<<endl;
+  
+    return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 7</h3>
+  <img src="output7.png" alt="Output Latihan 7">
+  <textarea readonly>// Melihat Relasi Dan Logic
+#include <iostream>
+
+using namespace std;
+      
+int main()
+{
+    int a,b,c,d,e,f,g,h,i;
+
+    cout<<"Masukan Nilai a =";cin>>a;
+    cout<<"Masukan Nilai b =";cin>>b;
+    cout<<"Masukan Nilai c =";cin>>c;
+      
+    d=a == b;
+    e=a !=b;
+    f=c >= a;
+    g=c >b;
+    h=a <c;
+    i=c >=b;
+
+    cout<<"-------------------------"<<endl;
+    cout<<"Hasil dari:"<<a<<"=="<<b<<"="<<d<<endl;
+    cout<<"Hasil dari:"<<a<<"!="<<b<<"="<<e<<endl;
+
+    cout<<"Hasil dari:"<<c<<">="<<a<<"="<<f<<endl;
+    cout<<"Hasil dari:"<<c<<">"<<b<<"="<<g<<endl;
+
+    cout<<"Hasil dari:"<<a<<"=="<<c<<"="<<h<<endl;
+    cout<<"Hasil dari:"<<c<<"=="<<b<<"="<<i<<endl;
+    
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 8</h3>
+  <img src="output8.png" alt="Output Latihan 8">
+  <textarea readonly>// Penggunaan Operator Logika OR
+#include<iostream>
+
+using namespace std;
+      
+int main()
+{
+    int a,b,c,d,e,f,g;
+      
+    cout<<"Masukan Nilai A =";cin>>a;
+    cout<<"Masukan Nilai B =";cin>>b;
+    cout<<"Masukan Nilai C =";cin>>c;
+      
+    d=a+4<10;
+    e=b>a+5;
+    f=c-3>4;
+    g=d||e||f;
+        
+    cout<<endl<<endl;
+    cout<<"Program Ekspresi OR"<<endl<<endl;
+    cout<<"Hasil dari d=a+4<10 adalah  :"<<d<<endl;
+    cout<<"Hasil dari e=b>a+5 adalah   :"<<e<<endl;
+    cout<<"Hasil dari f=c-3>4 adalah   :"<<f<<endl;
+    cout<<"Hasil dari g=d||e||f adalah :"<<g<<endl;
+      
+    cout<<endl;
+      
+  return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 9</h3>
+  <img src="output9.png" alt="Output Latihan 9">
+  <textarea readonly>// Mencari bilangan terbesar dari 3 bilangan bulat
+#include<iostream>
+
+using namespace std;
+      
+int main()
+{
+  int x,y,z;
+      
+    cout<<"Nilai X ?";cin>>x;
+    cout<<"Nilai y ?";cin>>y;
+    cout<<"Nilai z ?";cin>>z;
+      
+    if((x>y)&&(x>z))
+    cout<<"Bilangan terbesar adalah "<<x<<endl;
+  
+  else
+    if((y>x)&&(y>z))
+    cout<<"Bilangan terbesar adalah"<<y<<endl;
+    else
+    cout<<"Bilangan terbesar adalah "<<z<<endl;
+      
+  return 0;
+}</textarea>
+</div>
+<div class="exercise-box">
+  <h3>Latihan 10</h3>
+  <img src="output10.png" alt="Output Latihan 10">
+  <textarea readonly>// Program IF, ELSE
+#include <iostream>
+using namespace std;
+      
+int main()
+{
+    double tot_beli, potongan = 0, jum_bayar = 0;
+    cout << "Total Pembelian Rp. "; 
+    cin >> tot_beli;
+      
+    if (tot_beli >= 50000)
+      potongan = 0.2 * tot_beli;
+
+    else
+      potongan = 0.05 * tot_beli;
+      
+    cout << "Besarnya potongan Rp. " << potongan << endl;
+    jum_bayar = tot_beli - potongan;
+
+    cout << "Jumlah yang harus dibayarkan Rp. " << jum_bayar;
+
+    cout<<"	"<<endl;
+  
+  return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 11</h3>
+  <img src="output11.png" alt="Output Latihan 11">
+  <textarea readonly>//mencari indeks dari nilai ujian mahasiswa
+
+#include <iostream>
+
+using namespace std;
+      
+int main()
+{
+    float nilai;
+    char indeks;
+      
+    cout << "Nilai Ujian? "; 
+    cin >> nilai;
+      
+// Validasi nilai input
+    if (nilai < 0 || nilai > 100) 
+{
+    cout << "Nilai tidak valid. Masukkan nilai antara 0 dan 100." << endl;
+    return 1; // Keluar dari program
+}
+      
+// Menentukan indeks
+    if (nilai >= 80)
+    indeks = 'A';
+
+    else if (nilai >= 70)
+        indeks = 'B';
+
+    else if (nilai >= 60)
+        indeks = 'C';
+
+    else if (nilai >= 50)
+        indeks = 'D';
+
+    else
+        indeks = 'E';
+      
+    cout << "Indeks = " << indeks << endl;
+      
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 12</h3>
+  <img src="output12.png" alt="Output Latihan 12">
+  <textarea readonly>// Mencari nilai terbesar dari terbesar dari tiga buah bilangan bulat menggunakan if tersarang
+#include<iostream>
+
+using namespace std;
+      
+int main()
+{
+    int A,B,C;
+      
+    cout<<"Masukan nilai A : ";cin>>A;
+    cout<<"Masukan nilai B : ";cin>>B;
+    cout<<"Masukan nilai C : ";cin>>C;
+      
+    cout<<"-----------------------------"<<endl;
+    
+    if(A>B)
+    if(A>C)
+      
+    cout<<"Bilangan terbesar adalah : "<<A<<endl;
+        
+    else //(C>=A)
+    cout<<"Bilangan terbesar adalah : "<<C<<endl;
+
+    else //(B>=A)
+    if(B>C)
+      cout<<"Bilangan terbesar adalah : "<<B<<endl;
+      
+    else
+      cout<<"Bilangan terbesar adalah : "<<C<<endl;
+  
+   return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 13</h3>
+  <img src="output13.png" alt="Output Latihan 13">
+  <textarea readonly>// pendapatan jasa komisi
+#include <iostream>
+  
+using namespace std;
+      
+int main()
+{
+    float pendptan, jasa = 0, komisi = 0, total = 0;
+          
+    cout << "Pendapatan Hari ini Rp. ";
+    cin >> pendptan;
+      
+    if (pendptan >= 0 && pendptan <= 200000)
+      {
+        jasa = 10000;
+        komisi = 0.1 * pendptan;
+      }
+
+    else if (pendptan > 200000 && pendptan <= 500000)
+      {
+        jasa = 20000;
+        komisi = 0.15 * pendptan;
+      }
+
+    else if (pendptan > 500000)
+      {
+        jasa = 30000;
+        komisi = 0.2 * pendptan;
+      }
+
+    else
+      {
+        cout << "Pendapatan tidak valid!" << endl;
+        return 1; // Mengakhiri program jika input tidak valid
+      }
+      
+    total = komisi + jasa;
+      
+    cout << "Uang Jasa            Rp. " << jasa << endl;
+    cout << "Uang Komisi          Rp. " << komisi << endl;
+    cout << "==============================" << endl;
+    cout << "Hasil Total          Rp. " << total << endl;
+      
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 14</h3>
+  <img src="output14.png" alt="Output Latihan 14">
+  <textarea readonly>// Program menu hitung segi empat
+    #include <iostream>
+    #include <cmath>    // Menggunakan cmath
+    #include <iomanip>  // Untuk setw()
+    using namespace std;
+    
+    int main()
+    {
+        int pil;
+        float panjang, lebar, luas, kel, diag;
+    
+        cout << "=========================================" << endl;
+        cout << setw(5) << " " << "MENU UTAMA" << endl;
+        cout << "=========================================" << endl;
+        cout << "1. Hitung Luas        " << endl;
+        cout << "2. Hitung Keliling    " << endl;
+        cout << "3. Hitung Diagonal    " << endl;
+        cout << "4. Keluar Program     " << endl;
+        cout << "=========================================" << endl;
+        cout << "Pilih Nomor menu (1/2/3/4): "; 
+        cin >> pil;
+        cout << "=========================================" << endl;
+    
+        switch (pil)
+        {
+            case 1:
+                cout << "Panjang?  "; cin >> panjang;
+                cout << "Lebar?    "; cin >> lebar;
+                luas = panjang * lebar;
+                cout << "Luas segi empat = " << luas << endl;
+                break;
+    
+            case 2:
+                cout << "Panjang?  "; cin >> panjang;
+                cout << "Lebar?    "; cin >> lebar;
+                kel = 2 * (panjang + lebar);
+                cout << "Keliling segi empat = " << kel << endl;
+                break;
+    
+            case 3:
+                cout << "Panjang?  "; cin >> panjang;
+                cout << "Lebar?    "; cin >> lebar;
+                diag = sqrt((panjang * panjang) + (lebar * lebar));
+                cout << "Diagonal segi empat = " << diag << endl;
+                break;
+    
+            case 4:
+                cout << "Keluar Program... bye bye!" << endl;
+                break;
+    
+            default:
+                cout << "Anda salah memilih nomor menu...!!!" << endl;
+                break;
+        }
+    
+        return 0;
+    }
+    </textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 15</h3>
+  <img src="output15.png" alt="Output Latihan 15">
+  <textarea readonly>
+#include <iostream>
+
+using namespace std;
+    
+int main()
+{
+    char kode;
+    cout << "Masukan Kode Barang [1..4]: "; 
+    cin >> kode;
+    
+    switch (kode)
+      {
+        case '1':
+        cout << "Alat Olah Raga" << endl;
+        break;
+        
+        case '2':
+        cout << "Alat Elektronik" << endl;
+        break;
+        
+        case '3':
+        cout << "Alat Masak" << endl;
+        break;
+
+        default:
+        cout << "Anda Salah Masukan Kode......." << endl;
+        break;
+}  
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 16</h3>
+  <img src="output16.png" alt="Output Latihan 16">
+  <textarea readonly>// Hitung rata rata  nilai
+<#include <iostream>
+
+using namespace std;
+  
+int main()
+{
+    int k;
+    int n;
+
+    float nilai, jumlah, rata2;
+  
+    jumlah = 0; // Inisialisasi variabel jumlah
+  
+    cout << "Jumlah data : ";
+    cin >> n;
+  
+      for (k = 1; k <= n; k++)
+      { 
+          cout << "Nilai " << k << " : ";
+          cin >> nilai;
+          jumlah = jumlah + nilai;
+      }
+  
+    rata2 = jumlah / n;
+  
+    cout << "Rata-rata nilai = " << rata2 << endl;
+  
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 17</h3>
+  <img src="output17.png" alt="Output Latihan 17">
+  <textarea readonly>// melihat efek FOR tersarang
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+      
+int main()
+{
+  int a, b;
+  for (a = 1; a < 5; a++)
+  {
+    for (b = 1; b < 3; b++)
+
+    cout << setw(5) << a << setw(3) << b; // Pemisah antara "a" dan "b" dikoreksi
+    cout << endl; // Tambahkan baris baru setelah loop "b" selesai
+  }
+    return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 18</h3>
+  <img src="output18.png" alt="Output Latihan 18">
+  <textarea readonly>// Hitung luas segi empat
+#include <iostream>
+using namespace std;
+      
+int main()
+  {
+    float panjang, lebar, luas;
+    char pil = 'y'; // Gunakan tanda kutip tunggal (') untuk karakter.
+      
+    while (pil == 'y') // Gunakan tanda kutip tunggal (') untuk perbandingan karakter.
+  {
+    cout << "LUAS SEGI EMPAT\n";
+    cout << "===============\n";
+    cout << "Panjang  ?  ";
+    cin >> panjang;
+              
+    cout << "Lebar    ?  ";
+    cin >> lebar;
+      
+    luas = panjang * lebar;
+    cout << "Luas segi empat = " << luas << endl;
+      
+    cout << "Hitung lagi? (y/t): ";
+    cin >> pil;
+}
+    return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 19</h3>
+  <img src="output19.png" alt="Output Latihan 19">
+  <textarea readonly>// Code Latihan 1
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+      
+int main()
+{
+    float celcius, fahreinhet;
+    cout << "================================\n";
+    cout << "Celcius" << setw(12) << "Fahreinhat" << endl;
+    cout << "================================\n";
+      
+    celcius = 0; // Awal suhu Celsius.
+    do
+    {
+        fahreinhet = 1.8 * celcius + 32;
+        cout << setw(7) << celcius << setw(12) << fahreinhet << endl;
+        celcius += 10;
+    }
+    
+    while (celcius <= 100); // Batas hingga 100°C.
+      
+    cout << "==========================\n";
+    
+  return 0;
+}</textarea>
+</div>
+
+<div class="exercise-box">
+  <h3>Latihan 20</h3>
+  <img src="output20.png" alt="Output Latihan 20">
+  <textarea readonly>// Program hitung jumlah nilai jika ganjil
+#include <iostream>
+
+using namespace std;
+      
+int main()
+{
+    int k, N, x, jumlah = 0;
+      
+    cout << "Jumlah Data : ";
+    cin >> N;
+      
+    for (k = 0; k < N; k++)
+  {
+    cout << "Nilai " << (k + 1) << " : ";
+    cin >> x;
+      
+    if (x % 2 == 0)
+    continue;
+      
+    jumlah = jumlah + x;
+  }
+      
+    cout << "Jumlah = " << jumlah << endl;
+
+  return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 21</h3>
+  <img src="output21.png" alt="Output Latihan 21">
+  <textarea readonly>// Program larikstruktur
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+      
+    const int Nmaks = 100; // Ukuran maksimum array
+      
+    struct data_pegawai {
+    char nip[11];        // NIP pegawai
+    char nama[26];       // Nama pegawai
+    long gaji;           // Gaji pegawai
+  };
+      
+    int main() {
+    data_pegawai data[Nmaks];
+    int k, N;
+        
+    cout << "Jumlah Karyawan: ";
+    cin >> N;
+      
+    for (k = 0; k < N; k++) {
+      cout << "Data Karyawan " << (k + 1) << endl;
+      cout << "Nama: "; cin >> ws; cin.getline(data[k].nama, 26);
+      cout << "NIP: "; cin.getline(data[k].nip, 11);
+      cout << "Gaji: "; cin >> data[k].gaji;
+      cout << endl;
+    }
+      
+    cout << "             DAFTAR GAJI             " << endl;
+    cout << "        KARYAWAN PT. ELANG PERSADA  " << endl;
+    cout << endl;
+    cout << "==================================================" << endl;
+    cout << setw(5) << "No." 
+    << setw(15) << "NIP" 
+    << setw(30) << "NAMA" 
+    << setw(15) << "GAJI" << endl;
+    cout << "==================================================" << endl;
+      
+    for (k = 0; k < N; k++) {
+    cout << setw(5) << k + 1
+    << setw(15) << data[k].nip
+    << setw(30) << data[k].nama
+    << "Rp. " << setw(10) << data[k].gaji << endl;
+  }
+          
+  cout << "==================================================" << endl;
+      
+  return 0;
+}</textarea>
+</div>  
+
+<div class="exercise-box">
+  <h3>Latihan 22</h3>
+  <img src="output22.png" alt="Output Latihan 22">
+  <textarea readonly>// Program struktur class
+    #include <iostream>
+      #include <string> // Gunakan std::string untuk manipulasi string
+      
+      class Buku {
+          public:
+              std::string judul;
+              std::string pengarang;
+              int jumlah;
+      };
+      
+      int main() {
+          Buku novel;
+      
+          // Mengisi atribut menggunakan std::string
+          novel.judul = "Gun Of The Navarone";
+          novel.pengarang = "Alistair Maclean";
+          novel.jumlah = 12;
+      
+          // Menampilkan data ke layar
+          std::cout << "Judul: " << novel.judul << std::endl;
+          std::cout << "Pengarang: " << novel.pengarang << std::endl;
+          std::cout << "Jumlah: " << novel.jumlah << std::endl;
+      
+          return 0;
+      }
+
+  </textarea>
+</div>  
+
+<section id="resources" class="resources">
+  <h2>Sumber Materi</h2>
+  <a href="MODUL PRAKTEK DASAR C++.docx" download>Download Materi C++</a> 
+  <a href="https://drive.google.com/drive/folders/11q54xzmlIWyUYX7uR_C_H8nuhZit154l?usp=sharing" target="_blank">Sumber Google Drive</a>
+  <div id="pdf-viewer">
+  </div>
+</section>
+
+<footer>
+  <p>Azzahra Semester 1 Mata Kuliah C++ | Dosen Pengampu Pak Nyoman</p>
+</footer>
+
+<script src="pdf.js"></script>
+</body>
+</html>
