@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root untuk variabel warna default (mode pink) */
+:root {
+  --bg-color: #ffe0f0;
+  --text-color: #800040;
+  --button-bg: #800040;
+  --button-text: #ffe0f0;
+}
+
+/* Mode Sepia */
+body.sepia-mode {
+  --bg-color: #f4ecd8;
+  --text-color: #5b4636;
+  --button-bg: #5b4636;
+  --button-text: #f4ecd8;
+}
+
+/* Mode High Contrast */
+body.high-contrast-mode {
+  --bg-color: #000000;
+  --text-color: #ffff00;
+  --button-bg: #ffff00;
+  --button-text: #000000;
+}
+
+/* Mode Hijau */
+body.green-mode {
+  --bg-color: #e0f7e9;
+  --text-color: #004d00;
+  --button-bg: #004d00;
+  --button-text: #e0f7e9;
+}
+
+/* Mode Pink */
+body.pink-mode {
+  --bg-color: #ffe0f0;
+  --text-color: #800040;
+  --button-bg: #800040;
+  --button-text: #ffe0f0;
+}
+
+/* Body Styling */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tombol Styling */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--button-bg);
+  color: var(--button-text);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbar nav ul li a {
+  color: var(--button-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#home {
+  background: #f4f4f9;
+  text-align: center;
+}
+
+/* Container Styling untuk Kotak Latihan */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Agar item bisa membungkus ke bawah jika layar lebih kecil */
+  gap: 20px; /* Jarak antar kotak */
+  justify-content: center; /* Meratakan item di tengah */
+}
+
+/* Styling untuk Kotak Latihan */
+.exercise-box {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(50% - 10px); /* Lebar kotak latihan */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Media Query untuk Layar Kecil */
+@media (max-width: 768px) {
+  .exercise-box {
+    width: 90%; /* Lebar kotak latihan di layar kecil */
+  }
+}
+
+/* Gambar di Kotak Latihan */
+.exercise-box img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Textarea di Kotak Latihan */
+.exercise-box textarea {
+  width: 100%;
+  height: 150px;
+  font-family: monospace;
+  background: #eee;
+  border: none;
+  resize: none;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #a75353;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resources {
+  text-align: center;
+}
+
+.resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources ul li {
+  margin-bottom: 0.5rem;
+}
+
+.resources ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.resources ul li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: right;
+}
+
+/* Output Image */
+.output-image {
+  width: 30%;
+  height: auto;
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--text-color);
+}
